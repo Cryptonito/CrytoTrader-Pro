@@ -1,0 +1,35 @@
+body {
+  background: #1f2121;
+  color: #eee;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+}
+#app { max-width: 480px; margin: auto; padding: 12px; }
+header h1 { text-align: center; }
+#crypto-list { margin-top: 15px; }
+#search { width: 100%; padding: 8px; font-size: 1rem; border-radius: 6px; border: none; margin-bottom: 10px; }
+#crypto-list ul { list-style: none; padding: 0; max-height: 350px; overflow-y: auto; }
+#crypto-list li { padding: 10px; border-bottom: 1px solid #444; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+#crypto-list li:hover { background-color: #333; }
+#crypto-detail { margin-top: 25px; }
+.hidden { display: none; }
+#btn-back { background: #f1c232; border: none; padding: 8px 16px; border-radius: 5px; font-size: 1rem; color: #222; cursor: pointer; margin-bottom: 10px; }
+#interval-selector button { background: none; border: 2px solid #f1c232; color: #f1c232; padding: 6px 12px; margin-right: 6px; border-radius: 4px; cursor: pointer; }
+#interval-selector button.active,
+#interval-selector button:hover { background-color: #f1c232; color: #222; }
+#price-chart { background: #222; border-radius: 8px; margin: 10px 0 20px 0; display: block; max-width: 100%; }
+#indicators p { font-size: 1rem; margin: 6px 0; }
+#trade-signal {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.signal-buy {
+  color: #32b852;
+}
+.signal-sell {
+  color: #c0152f;
+}
+.signal-hold {
+  color: #f1c232;
+  font-style: italic;
+}

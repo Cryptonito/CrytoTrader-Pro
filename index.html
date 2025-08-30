@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>CriptoTrader Pro - USDC Real Funcional</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>CriptoTrader Pro (USDC - Real)</h1>
+    </header>
+    <section id="crypto-list">
+      <input type="search" id="search" placeholder="Buscar par USDC..." autocomplete="off" />
+      <ul id="list"></ul>
+    </section>
+    <section id="crypto-detail" class="hidden">
+      <button id="btn-back">← Volver</button>
+      <h2 id="crypto-name"></h2>
+      <div id="interval-selector">
+        <button data-interval="15m">15m</button>
+        <button data-interval="1h" class="active">1h</button>
+        <button data-interval="4h">4h</button>
+        <button data-interval="1d">1d</button>
+      </div>
+      <canvas id="price-chart" width="350" height="180"></canvas>
+      <div id="indicators">
+        <p><strong>RSI:</strong> <span id="rsi-value"></span></p>
+        <p><strong>Soporte:</strong> <span id="support-value"></span></p>
+        <p><strong>Resistencia:</strong> <span id="resistance-value"></span></p>
+        <p><strong>Precio actual:</strong> <span id="current-price"></span></p>
+        <p><strong>Señal de trading:</strong> <span id="trade-signal"></span></p>
+        <p><em><span id="signal-info"></span></em></p>
+      </div>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
